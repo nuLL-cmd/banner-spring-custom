@@ -1,6 +1,6 @@
 # Lib Banner Spring boot
 
-***Sobre a lib***
+### Sobre a lib
 
 Dependëncia dedicada a exibir um banner personalizado subistituindo o banner original de aplicações SpringBoot
 
@@ -14,12 +14,13 @@ A lib oferece visualição de um banner com amostra de sua escolha, assim como t
 - VERSÃO DO PROJETO 
 - DESCRICAO DO PROJETO
 
-***As opções acimas podem ser facilmente personalizadas, assim como também é possível contribuir adicionando novas opções***.</br>
-***Dependência***
+***As opções acimas podem ser facilmente personalizadas, assim como também é possível contribuir adicionando novas opções***.
+
+### Dependência
 
 Link: [Projeto no Github](https://github.com/nuLL-cmd/banner-spring-custom)<br>
 
-***Utilizição***
+### Utilizição
 
 Para que a depência exiba os dados de acordo com o programado, é necessário que algumas informçãos sobre a aplicação estejam presentes no arquivo ***properties*** default do projeto.
 
