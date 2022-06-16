@@ -162,7 +162,7 @@ Você pode também usar seu próprio banner personalizado usando o meetodo <font
 >        CustomBanner customBanner = new CustomBanner();
 >        customBanner.setCustomBanner(BANNER);
 >        
->        SpringApplication application = new SpringApplication(BoletoCobrancaApiApplication.class);
+>        SpringApplication application = new SpringApplication(ChickenApplication.class);
 >        application.setBanner(customBanner);
 >        application.run(args);
 >    }
