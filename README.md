@@ -182,10 +182,10 @@ O resultado obtido no console do catalina será algo como a saida abaixo.
 :: PORTA PROJETO  :: 8086
 :: PROJETO        :: chicken-api
 :: PERFIL ATIVO   :: dev
-:: ORGANIZAÃ‡ÃƒO    :: AutomatoDev
-:: VERSÃƒO SPRING  :: 2.5.2
-:: VERSÃƒO PROJETO :: 1.0.0-SNAPSHOT
-:: DESCRIÃ‡ÃƒO      :: Projeto feito pensando em frangos
+:: ORGANIZAÇÃO    :: AutomatoDev
+:: VERSÃO SPRING  :: 2.5.2
+:: VERSÃO PROJETO :: 1.0.0-SNAPSHOT
+:: DESCRIÇÃO      :: Projeto feito pensando em frangos
 
 ```
 
