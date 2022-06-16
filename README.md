@@ -171,7 +171,7 @@ Você pode também usar seu próprio banner personalizado usando o meetodo <font
 >}
 >```
 
-O resultado obtido será algo como a saida a baixo no console do catalina.
+O resultado obtido no console do catalina será algo como a saida abaixo.
 
 ```LOG
 ,-----.   ,--.
