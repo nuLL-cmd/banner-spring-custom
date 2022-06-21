@@ -18,7 +18,7 @@ A lib oferece visualização de um banner com amostra de sua escolha, assim como
 
 ### Dependência
 
-Link: [Projeto no Github](https://github.com/nuLL-cmd/banner-spring-custom)<br>
+Link: [Artifact](https://github.com/nuLL-cmd/banner-spring-custom/packages/)<br>
 
 ### Utilização
 
