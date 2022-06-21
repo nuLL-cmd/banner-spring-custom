@@ -2,7 +2,7 @@
 
 ### Sobre a lib
 
-Dependëncia dedicada a exibir um banner personalizado subistituindo o banner original de aplicações SpringBoot
+Dependência dedicada a exibir um banner personalizado subistituindo o banner original de aplicações SpringBoot
 
 A lib oferece visualição de um banner com amostra de sua escolha, assim como também mostra informações basicas sobre o projeto durante sua inicialização.
 
@@ -14,7 +14,7 @@ A lib oferece visualição de um banner com amostra de sua escolha, assim como t
 - VERSÃO DO PROJETO 
 - DESCRICAO DO PROJETO
 
-***As opções acimas podem ser facilmente personalizadas, assim como também é possível contribuir adicionando novas opções***.
+***As informações acimas podem ser facilmente personalizadas, assim como também é possível contribuir adicionando novas informações***.
 
 ### Dependência
 
@@ -22,7 +22,7 @@ Link: [Projeto no Github](https://github.com/nuLL-cmd/banner-spring-custom)<br>
 
 ### Utilizição
 
-Para que a depência exiba os dados de acordo com o programado, é necessário que algumas informçãos sobre a aplicação estejam presentes no arquivo ***properties*** default do projeto.
+Para que a dependência exiba os dados no console, é necessário que algumas informçãos sobre a aplicação estejam presentes no arquivo ***properties*** default do projeto.
 
 Excemplo usando .yaml:
 
@@ -45,7 +45,7 @@ Exemplo usando .properties:
 >app.context-path=@project.artifactId@
 >```
 
-Após realizar tais configuraçõess, basta setar o banner no metodo main da aplicação que a configuração default será aplicada:
+Após realizar tais configuraçõess, basta setar o banner no método main da aplicação que a configuração default será aplicada:
 
 >```JAVA
 >@SpringBootApplication
@@ -60,7 +60,7 @@ Após realizar tais configuraçõess, basta setar o banner no metodo main da apl
 >}
 >```
 
-Você pode também usar seu próprio banner personalizado usando o meetodo <font color="orange">setCustomBanner()</font>
+Você pode também usar seu próprio banner personalizado usando o método <font color="orange">setCustomBanner()</font>
 
 >```JAVA
 >@SpringBootApplication
@@ -86,7 +86,7 @@ Você pode também usar seu próprio banner personalizado usando o meetodo <font
 >}
 >```
 
-O resultado obtido no console do catalina será algo como a saida abaixo.
+O resultado obtido no console do catalina será algo como a saída abaixo.
 
 ```LOG
 ,-----.   ,--.
