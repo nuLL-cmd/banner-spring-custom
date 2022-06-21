@@ -2,17 +2,17 @@
 
 ### Sobre a lib
 
-Dependência dedicada a exibir um banner personalizado subistituindo o banner original de aplicações SpringBoot
+Dependência dedicada a exibir um banner personalizado substituindo o banner original de aplicações SpringBoot
 
-A lib oferece visualição de um banner com amostra de sua escolha, assim como também mostra informações basicas sobre o projeto durante sua inicialização.
+A lib oferece visualização de um banner com amostra de sua escolha, assim como também mostra informações básicas sobre o projeto durante sua inicialização.
 
 - PORTA DO PROJETO
 - NOME DO PROJETO
 - PERFIL ATIVO 
-- NOME DA ORGANIZACAO
+- NOME DA ORGANIZAÇÃO
 - VERSÃO DO SPRINGBOOT 
 - VERSÃO DO PROJETO 
-- DESCRICAO DO PROJETO
+- DESCRIÇÃO DO PROJETO
 
 ***As informações acimas podem ser facilmente personalizadas, assim como também é possível contribuir adicionando novas informações***.
 
@@ -20,11 +20,11 @@ A lib oferece visualição de um banner com amostra de sua escolha, assim como t
 
 Link: [Projeto no Github](https://github.com/nuLL-cmd/banner-spring-custom)<br>
 
-### Utilizição
+### Utilização
 
-Para que a dependência exiba os dados no console, é necessário que algumas informçãos sobre a aplicação estejam presentes no arquivo ***properties*** default do projeto.
+Para que a dependência exiba os dados no console, é necessário que algumas informações sobre a aplicação estejam presentes no arquivo ***properties*** default do projeto.
 
-Excemplo usando .yaml:
+Exemplo usando .yaml:
 
 >```YAML
 >app:
@@ -40,12 +40,12 @@ Exemplo usando .properties:
 >```PROPERTIES
 >app.version=@project.version@
 >app.name=@project.name@
->app.description=@projectt.description@
+>app.description=@project.description@
 >app.organization=@project.organization.name@    
 >app.context-path=@project.artifactId@
 >```
 
-Após realizar tais configuraçõess, basta setar o banner no método main da aplicação que a configuração default será aplicada:
+Após realizar tais configurações, basta setar o banner no método main da aplicação que a configuração default será aplicada:
 
 >```JAVA
 >@SpringBootApplication
