@@ -20,6 +20,15 @@ A lib oferece visualização de um banner com amostra de sua escolha, assim como
 
 Link: [Artifact](https://github.com/nuLL-cmd/banner-spring-custom/packages/)<br>
 
+>```XML
+><properties>
+>   <java.version>11</java.version>
+>   <repackage.classifier/>
+>   <spring.version>5.1.11.RELEASE</spring.version>
+>   <spotless.version>2.20.0</spotless.version>
+></properties>
+>```
+
 ### Utilização
 
 Para que a dependência exiba os dados no console, é necessário que algumas informações sobre a aplicação estejam presentes no arquivo ***properties*** default do projeto.
