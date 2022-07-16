@@ -24,7 +24,7 @@ Link: [Artifact](https://github.com/nuLL-cmd/banner-spring-custom/packages/)<br>
 
 Para que a dependência exiba os dados no console, é necessário que algumas informações sobre a aplicação estejam presentes no arquivo ***properties*** default do projeto.
 
-Exemplo usando .yaml:
+Exemplo usando .yaml / .yml:
 
 >```YAML
 >app:
