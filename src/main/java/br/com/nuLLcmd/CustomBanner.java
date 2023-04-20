@@ -11,16 +11,11 @@ import org.springframework.boot.ansi.AnsiStyle;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 
-import lombok.Getter;
-import lombok.Setter;
-
 /*
  *
  * https://stackoverflow.com/questions/44026687/show-custom-variable-in-spring-boot-banner
  *
  */     
-@Getter
-@Setter
 @Service
 public class CustomBanner implements Banner {
 
@@ -44,11 +39,13 @@ public class CustomBanner implements Banner {
     private final String APP_VERSAO = ":: VERSÃO PROJETO :: ";
     private final String DESCRICAO = ":: DESCRIÇÃO      :: ";
 
+    /* ------------------------------------------------------------------------------------------------------*/
+
     @Override
     public void printBanner(Environment environment, Class<?> sourceClass, PrintStream printStream) {
-
+        
         for (String line : customBanner.length != 0 ? customBanner : BANNER) {
-                printStream.println(line);
+                  printStream.println(AnsiOutput.toString(AnsiColor.BRIGHT_RED, line));
             }
 
         String porta = this.validaPropriedade(environment, "server.port");
@@ -59,30 +56,34 @@ public class CustomBanner implements Banner {
         String descricao = this.validaPropriedade(environment, "app.description");
 
    
-        imprimirNoBanner(printStream, PORTA_PROJETO, porta);
-        imprimirNoBanner(printStream, PROJETO, nome);
-        imprimirNoBanner(printStream, PERFIL_AIVO, perfilAtivo);
-        imprimirNoBanner(printStream, ORGANIZACAO, organizacao);
-        imprimirNoBanner(printStream, SPRING_BOOT, SpringBootVersion.getVersion());
-        imprimirNoBanner(printStream, APP_VERSAO,projetoVersao);
-        imprimirNoBanner(printStream, DESCRICAO,descricao);
+        imprimirNoBanner(printStream, PORTA_PROJETO, porta, AnsiColor.GREEN);
+        imprimirNoBanner(printStream, PROJETO, nome, AnsiColor.BRIGHT_BLUE);
+        imprimirNoBanner(printStream, PERFIL_AIVO, perfilAtivo, AnsiColor.BRIGHT_MAGENTA);
+        imprimirNoBanner(printStream, ORGANIZACAO, organizacao, AnsiColor.BRIGHT_RED);
+        imprimirNoBanner(printStream, SPRING_BOOT, SpringBootVersion.getVersion(), AnsiColor.BRIGHT_CYAN);
+        imprimirNoBanner(printStream, APP_VERSAO,projetoVersao, AnsiColor.BRIGHT_YELLOW);
+        imprimirNoBanner(printStream, DESCRICAO,descricao, AnsiColor.RED);
         System.out.println("\n");
     }
 
+    /* ------------------------------------------------------------------------------------------------------*/
 
-private void imprimirNoBanner(PrintStream printStream, String titulo, String propriedade) {
+
+    private void imprimirNoBanner(PrintStream printStream, String titulo, String propriedade, AnsiColor corPropriedade) {
 
         String padding = "";
 
                printStream.println(
                         AnsiOutput.toString(
-                                AnsiColor.YELLOW,
+                                AnsiColor.WHITE,
                                 titulo,
-                                AnsiColor.DEFAULT,
+                                corPropriedade,
                                 padding,
                                 AnsiStyle.FAINT,
                                 propriedade));
-}
+    }
+
+    /* ------------------------------------------------------------------------------------------------------*/
 
     private String validaPropriedade(Environment environment, String propriedade) {
 
@@ -98,5 +99,17 @@ private void imprimirNoBanner(PrintStream printStream, String titulo, String pro
         return "N/A";
 
     }
+
+    /* ------------------------------------------------------------------------------------------------------*/
+
+    public void setCustomBanner(String[] customBanner) {
+
+        if(Objects.nonNull(customBanner)) {
+
+            this.customBanner = customBanner;
+        }
+    }
+
+    /* ------------------------------------------------------------------------------------------------------*/
 
 }

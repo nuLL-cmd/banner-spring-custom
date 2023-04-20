@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.com.nuLLcmd</groupId>
 	<artifactId>banner-spring-custom</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<name>banner-spring-custom</name>
     <packaging>jar</packaging>
 	<description>Banner de incialização personalizado SpringBoot</description>
