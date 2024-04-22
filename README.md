@@ -18,6 +18,47 @@ A lib oferece visualização de um banner com amostra de sua escolha, assim como
 
 ### Dependência
 
+Altere seu arquivo settings.xml adaptando o modelo abaixo.
+
+```xml
+<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
+  <activeProfiles>
+    <activeProfile>github</activeProfile>
+  </activeProfiles>
+  <profiles>
+    <profile>
+      <id>github</id>
+      <repositories>
+        <repository>
+          <id>central</id>
+          <url>https://repo1.maven.org/maven2</url>
+        </repository>
+        <repository>
+          <id>github-null-cmd</id>
+          <name>Github nuLL-cmd Apache Maven Packages</name>
+          <url>https://maven.pkg.github.com/nuLL-cmd/banner-spring-custom</url>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+      </repositories>
+    </profile>
+  </profiles>
+  <servers>
+    <server>
+      <id>github-null-cmd</id>
+      <username>nuLL-cmd</username>
+      <password>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</password>
+    </server>
+  </servers>
+</settings>
+
+```
+
+Baixe o jar ou adicine a dependência em seu arquivo pom.xml
+
 Link: [Artifact](https://github.com/nuLL-cmd/banner-spring-custom/packages/)<br>
 
 >```XML
