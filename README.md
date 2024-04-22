@@ -61,14 +61,13 @@ Baixe o jar ou adicine a dependência em seu arquivo pom.xml
 
 Link: [Artifact](https://github.com/nuLL-cmd/banner-spring-custom/packages/)<br>
 
->```XML
-><properties>
->   <java.version>11</java.version>
->   <repackage.classifier/>
->   <spring.version>5.1.11.RELEASE</spring.version>
->   <spotless.version>2.20.0</spotless.version>
-></properties>
->```
+```XML
+<dependency>
+  <groupId>br.com.nuLLcmd</groupId>
+  <artifactId>banner-spring-custom</artifactId>
+  <version>1.0.2</version>
+</dependency>
+```
 
 ### Utilização
 
